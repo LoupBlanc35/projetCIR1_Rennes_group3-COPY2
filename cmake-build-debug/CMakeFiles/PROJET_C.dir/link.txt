@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/PROJET_C.dir/main.c.o CMakeFiles/PROJET_C.dir/person.c.o CMakeFiles/PROJET_C.dir/population.c.o CMakeFiles/PROJET_C.dir/filemanager.c.o CMakeFiles/PROJET_C.dir/advanced.c.o CMakeFiles/PROJET_C.dir/htmlexport.c.o -o PROJET_C 

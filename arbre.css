@@ -1,0 +1,22 @@
+.carre {
+    position: relative;
+    background-color: #dfdf32;
+    padding: 2rem;
+    text-align: center;
+    max-width: 200px;
+}
+
+.carre::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    bottom: 15px;
+    right: 5px;
+    width: 50%;
+    top: 80%;
+    max-width: 200px;
+
+    box-shadow: 1px 13px 10px #aaff00;
+    transform: rotate(4deg);
+}

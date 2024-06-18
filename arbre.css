@@ -1,4 +1,4 @@
-.carre {
+.enfant {
     position: relative;
     background-color: #dfdf32;
     padding: 2rem;
@@ -6,7 +6,7 @@
     max-width: 200px;
 }
 
-.carre::before {
+.enfant::before {
     content: "";
 
     position: absolute;
@@ -18,5 +18,51 @@
     max-width: 200px;
 
     box-shadow: 1px 13px 10px #aaff00;
+    transform: rotate(4deg);
+}
+
+.parent {
+    position: relative;
+    background-color: #12dfc7;
+    padding: 2rem;
+    text-align: center;
+    max-width: 200px;
+}
+
+.parent::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    bottom: 15px;
+    right: 5px;
+    width: 50%;
+    top: 80%;
+    max-width: 200px;
+
+    box-shadow: 1px 13px 10px #318a7c;
+    transform: rotate(4deg);
+}
+
+.grand-parent {
+    position: relative;
+    background-color: #8f2cff;
+    padding: 2rem;
+    text-align: center;
+    max-width: 200px;
+}
+
+.grand-parent::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    bottom: 15px;
+    right: 5px;
+    width: 50%;
+    top: 80%;
+    max-width: 200px;
+
+    box-shadow: 1px 13px 10px #9f74d6;
     transform: rotate(4deg);
 }

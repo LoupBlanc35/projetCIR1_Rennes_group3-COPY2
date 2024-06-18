@@ -2,10 +2,23 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <link href="arbre.css" rel="stylesheet" type="text/css"/>
         <title>Arbre généalogique</title>
     </head>
     <body>
-        <div class="carre">Coucou ! Je veux être carre.</div>
     <!-- AIDE : https://developer.mozilla.org/fr/docs/Learn/CSS/Howto/create_fancy_boxes-->
+
+        <table>
+            <tbody>
+                <tr>    <td colspan="4" class="enfant">ben solo</td></tr>
+                <tr>    <td colspan="2" class="parent">han solo</td>
+                        <td colspan="2" class="parent">leia organa</td></tr>
+
+                <tr>    <td colspan="1">    </td>
+                        <td colspan="1">    </td>
+                        <td colspan="1" class="grand-parent">darth vader</td>
+                        <td colspan="1" class="grand-parent">padme amidala</td></tr>
+            </tbody>
+        </table>
     </body>
 </html>

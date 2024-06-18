@@ -22,6 +22,7 @@ FILE * ouverture_fichier(char* buffer){
     return 0;
 }
 
+/*
 int lecture(char* buffer, const char *format){
     int nb_characters = 0; //count the number of printed characters
     int index = nb_characters; //index indicates the position where it prints in the buffer
@@ -30,12 +31,13 @@ int lecture(char* buffer, const char *format){
     nb_characters += lecture(buffer + index, "r");
     printf("%d caracteres ecrits : %s\n", nb_characters, buffer);
 }
+*/
 
 int titreHTMLPerson(char* buffer, Person* p){
     Person p1;
     fgets(buffer, 256, ouverture_fichier("40.csv"));
-    lecture(p1.prenom, "r");
-    lecture(p1.nom, "r");
+    sprintf(p1.prenom, "r");
+    sprintf(p1.nom, "r");
     //AFFICHAGE d'un element HTML pour 3
     int m = titreHTMLPerson(buffer, &p1);
     printf("%s %d characters written \n\n", buffer, m);
@@ -43,13 +45,13 @@ int titreHTMLPerson(char* buffer, Person* p){
     char debut[]="<!DOCTYPE>\n xml:lang='fr' lang='fr'>\n<head>\n<title>\nArbre Généalogique\n</title>\n<meta http-equiv='Content-Type'  content='text/html;charset=utf-8' />\n<link rel='stylesheet' media='screen' type='text/css' title='arbre_genealogique' href='arbre.css' />\n</head>\n<body>\n<h1>Arbre Généaloqique<br/></h1>\n<table>\n";
     char fin[]="</tr>\n</table>\n</body>\n</html>\n";
 
-    FILE* pfichier = fopen("arbre.htlm","r");
-    if(pfichier == NULL)
-    {
-        fclose(pfichier);
-        FILE* pfichier = fopen("arbre.htlm","a+");
-        fprintf(pfichier,"%s",debut);
-    }
+    FILE* pfichier = fopen("arbre.htlm","w");
+
+
+    pfichier = fopen("arbre.htlm","a+");
+    fprintf(pfichier,"%s",debut);
+    fprintf(pfichier,"%s",fin);
+    fclose(pfichier);
 }
 
 /*

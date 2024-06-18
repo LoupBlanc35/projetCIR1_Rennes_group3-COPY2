@@ -88,12 +88,6 @@
 		<Unit filename="/mnt/c/Users/Utilisateur/OneDrive - yncréa/Bureau/projetCIR1_Rennes_group3-information/partie_programmation_2_COPY/filemanager.h">
 			<Option target="PROJET_C"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/Utilisateur/OneDrive - yncréa/Bureau/projetCIR1_Rennes_group3-information/partie_programmation_2_COPY/htmlexport.c">
-			<Option target="PROJET_C"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/Utilisateur/OneDrive - yncréa/Bureau/projetCIR1_Rennes_group3-information/partie_programmation_2_COPY/htmlexport.h">
-			<Option target="PROJET_C"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/Utilisateur/OneDrive - yncréa/Bureau/projetCIR1_Rennes_group3-information/partie_programmation_2_COPY/main.c">
 			<Option target="PROJET_C"/>
 		</Unit>

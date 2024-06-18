@@ -177,30 +177,6 @@ filemanager.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROJET_C.dir/build.make CMakeFiles/PROJET_C.dir/filemanager.c.s
 .PHONY : filemanager.c.s
 
-htmlexport.o: htmlexport.c.o
-.PHONY : htmlexport.o
-
-# target to build an object file
-htmlexport.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROJET_C.dir/build.make CMakeFiles/PROJET_C.dir/htmlexport.c.o
-.PHONY : htmlexport.c.o
-
-htmlexport.i: htmlexport.c.i
-.PHONY : htmlexport.i
-
-# target to preprocess a source file
-htmlexport.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROJET_C.dir/build.make CMakeFiles/PROJET_C.dir/htmlexport.c.i
-.PHONY : htmlexport.c.i
-
-htmlexport.s: htmlexport.c.s
-.PHONY : htmlexport.s
-
-# target to generate assembly for a file
-htmlexport.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROJET_C.dir/build.make CMakeFiles/PROJET_C.dir/htmlexport.c.s
-.PHONY : htmlexport.c.s
-
 main.o: main.c.o
 .PHONY : main.o
 
@@ -288,9 +264,6 @@ help:
 	@echo "... filemanager.o"
 	@echo "... filemanager.i"
 	@echo "... filemanager.s"
-	@echo "... htmlexport.o"
-	@echo "... htmlexport.i"
-	@echo "... htmlexport.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

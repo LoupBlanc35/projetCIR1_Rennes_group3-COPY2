@@ -6,16 +6,11 @@
 void insert(Population *p,Person* data){
     p->taille++;
     p->pers= realloc(p->pers,p->taille*sizeof(Person));
-    if (p->pers == NULL) {
-        printf("Erreur de réallocation de mémoire.\n");
-        exit(1);
-        }
     p->pers[p->taille-1]=*data;
 }
 
 void link_popu(Population* p){
     for(int i=0;i<p->taille;i++){
-        printf("%d",i);
         int comp=0;
         int trv=0;
         while(trv!=2){

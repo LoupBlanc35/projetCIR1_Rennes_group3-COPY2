@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "htmlexport.h"
-#include "advanced.h"
+
 
 
 

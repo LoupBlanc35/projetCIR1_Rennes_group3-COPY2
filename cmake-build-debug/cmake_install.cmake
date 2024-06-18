@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Utilisateur/OneDrive - yncréa/Bureau/projetCIR1_Rennes_group3-information/partie_programmation_2_COPY
+# Install script for directory: /mnt/c/Users/jejed/CLionProjects/projetCIR1_Rennes_group3-COPY2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/Utilisateur/OneDrive - yncréa/Bureau/projetCIR1_Rennes_group3-information/partie_programmation_2_COPY/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/jejed/CLionProjects/projetCIR1_Rennes_group3-COPY2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

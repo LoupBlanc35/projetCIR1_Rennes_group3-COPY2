@@ -1,20 +1,16 @@
 ﻿#include <stdio.h>
 #include "advanced.h"
-#include "htmlexport.h"
-
 int main() {
     Population population;
-    population= read_csv("../10000.csv");
+    population= read_csv("../40.csv");
     link_popu(&population);
-    //for (int i=0;i<population.taille;i++)
-      //  printf("%d %s\n",i,population.pers[i].p_mere->prenom);
-    printf("%d\n",population.taille);
-    Person* er =fratrie(population.pers[4724],population);
-    for(int j=0;j<10;j++)
-       printf("%d %s\n",er[j].id,er[j].prenom);
-
-    Person *p1;
-    titreHTMLPerson("40.csv", p1);
+    /*for (int i=0;i<population.taille;i++)
+        printf("%d %s\n",i,population.pers[i].p_mere->prenom);*/
+    Person* a = ancetre(population.pers[2],2);
+    Person* er =fratrie(population.pers[1],population);
+    for(int j=0;j<4;j++)
+        printf("%d %s\n",a[j].id,a[j].prenom);
+    //ancetre(population.pers[1],2);
 
     return 0;
 }

@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include <string.h>
 #include "htmlexport.h"
+#include "advanced.h"
 
 
-FILE * ouverture_fichier(char* buffer){ //Ouverture fichier en mode lecture
+
+FILE * ouverture_fichier(char* buffer){
     FILE* fichier;
     fichier = fopen("40.csv", "r");
+    if (fichier == NULL) {
+        printf("Pas d'ouverture du fichier !\n");
+        return (FILE *) -1;
+    }
     if (fichier != NULL) {
         while(fgets(buffer, 256, fichier) != NULL) {
             printf("%s", buffer);
@@ -13,14 +19,9 @@ FILE * ouverture_fichier(char* buffer){ //Ouverture fichier en mode lecture
         }
         fclose(fichier);
     }
-
-    if (fichier == NULL) { //si fichier vide
-        printf("Pas d'ouverture du fichier !\n");
-        return (FILE *) -1;
-    }
     return 0;
 }
-/*
+
 int lecture(char* buffer, const char *format){
     int nb_characters = 0; //count the number of printed characters
     int index = nb_characters; //index indicates the position where it prints in the buffer
@@ -29,28 +30,26 @@ int lecture(char* buffer, const char *format){
     nb_characters += lecture(buffer + index, "r");
     printf("%d caracteres ecrits : %s\n", nb_characters, buffer);
 }
-*/
 
 int titreHTMLPerson(char* buffer, Person* p){
     Person p1;
     fgets(buffer, 256, ouverture_fichier("40.csv"));
-    sprintf(p1.prenom, "r");
-    sprintf(p1.nom, "r");
+    lecture(p1.prenom, "r");
+    lecture(p1.nom, "r");
     //AFFICHAGE d'un element HTML pour 3
     int m = titreHTMLPerson(buffer, &p1);
-
-    FILE* pfichier = fopen("arbre.htlm","w");
-
     printf("%s %d characters written \n\n", buffer, m);
 
     char debut[]="<!DOCTYPE>\n xml:lang='fr' lang='fr'>\n<head>\n<title>\nArbre Généalogique\n</title>\n<meta http-equiv='Content-Type'  content='text/html;charset=utf-8' />\n<link rel='stylesheet' media='screen' type='text/css' title='arbre_genealogique' href='arbre.css' />\n</head>\n<body>\n<h1>Arbre Généaloqique<br/></h1>\n<table>\n";
     char fin[]="</tr>\n</table>\n</body>\n</html>\n";
 
-
-    pfichier = fopen("arbre.htlm","a+");
-    fprintf(pfichier,"%s",debut);
-    fprintf(pfichier,"%s",fin);
-    fclose(pfichier);
+    FILE* pfichier = fopen("arbre.htlm","r");
+    if(pfichier == NULL)
+    {
+        fclose(pfichier);
+        FILE* pfichier = fopen("arbre.htlm","a+");
+        fprintf(pfichier,"%s",debut);
+    }
 }
 
 /*

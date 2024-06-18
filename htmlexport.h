@@ -1,7 +1,7 @@
 #ifndef PARTIE_PROGRAMMATION_HTMLEXPORT_H
 #define PARTIE_PROGRAMMATION_HTMLEXPORT_H
 
-#include "advanced.h"
+#include "person.h"
 
 FILE * ouverture_fichier(char* buffer);
 int titreHTMLPerson(char* buffer, Person* p);

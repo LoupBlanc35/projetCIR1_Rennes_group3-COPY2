@@ -2,7 +2,7 @@
 
 importer les librairies :
  
- -> stdio.h 
+-> stdio.h 
 
  -> stdlib.h
 
@@ -10,7 +10,3 @@ importer les librairies :
 
  -> math.h
  
-Problèmes de déposition de fichiers de notre dépot GitHub
-Création d'un nouveau dépôt dans l'urgence
-
-Problème sur le nouveau dépôt de GitHub !

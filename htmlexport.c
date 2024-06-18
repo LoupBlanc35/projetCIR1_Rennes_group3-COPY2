@@ -3,9 +3,7 @@
 #include "htmlexport.h"
 
 
-
-
-FILE * ouverture_fichier(char* buffer){
+FILE * ouverture_fichier(char* buffer){ //Ouverture fichier en mode lecture
     FILE* fichier;
     fichier = fopen("40.csv", "r");
     if (fichier != NULL) {

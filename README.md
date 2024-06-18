@@ -2,7 +2,7 @@
 
 importer les librairies :
  
--> stdio.h 
+ -> stdio.h 
 
  -> stdlib.h
 

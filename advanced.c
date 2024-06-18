@@ -1,6 +1,3 @@
-//
-// Created by jejed on 14/06/2024.
-//
 #include "advanced.h"
 #include "math.h"
 Person* fratrie(Person perso,Population p){

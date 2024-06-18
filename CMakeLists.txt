@@ -14,5 +14,6 @@ add_executable(PROJET_C main.c
         advanced.c
         advanced.h
         htmlexport.c
+        htmlexport.h
 )
 target_link_libraries( PROJET_C m)

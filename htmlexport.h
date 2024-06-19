@@ -9,5 +9,5 @@ int titreHTMLPerson(char* buffer, Person* p);
 int fichePath(char* buffer, Person* p);
 int ficheTabPath(char* buffer, Person* p);
 char* exportPersonToHTML(Person* p,char* path);
-void tabHTML(Person* p,char* path)
+void tabHTML(Person* p,char* path);
 #endif //PROJET_C_HTMLEXPORT_H

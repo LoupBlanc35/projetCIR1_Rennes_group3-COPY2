@@ -15,7 +15,7 @@ int ficheTabPath(char* buffer, Person* p){
 char* exportPersonToHTML(Person* p,char* path){
     FILE* file = fopen(path, "w");
     char html[TAILLE*2];
-    fprintf(html,
+    fprintf(&html,
             "<!DOCTYPE html>\n"
             "<html>\n"
             "<body>\n"

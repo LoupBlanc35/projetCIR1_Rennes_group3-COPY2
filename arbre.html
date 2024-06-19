@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <link href="arbre.css" rel="stylesheet" type="text/css"/>
-        <title>Arbre généalogique</title>
-    </head>
-    <body>
-    <!-- AIDE : https://developer.mozilla.org/fr/docs/Learn/CSS/Howto/create_fancy_boxes-->
-
-        <table>
-            <tbody>
-                <tr>    <td colspan="4" class="enfant">ben solo</td></tr>
-                <tr>    <td colspan="2" class="parent">han solo</td>
-                        <td colspan="2" class="parent">leia organa</td></tr>
-
-                <tr>    <td colspan="1">    </td>
-                        <td colspan="1">    </td>
-                        <td colspan="1" class="grand-parent">darth vader</td>
-                        <td colspan="1" class="grand-parent">padme amidala</td></tr>
-            </tbody>
-        </table>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <link href="arbre.css" rel="stylesheet" type="text/css"/>
+    <title>Arbre généalogique</title>
+</head>
+<body>
+<div class="tree">
+    <div class="node">
+        <div class="enfant">enfant</div>
+    </div>
+    <div class="node">
+        <div class="parent">
+            <div>parent</div>
+            <div>parent</div>
+        </div>
+    </div>
+    <div class="node">
+        <div class="grand-parent">
+            <div></div>
+            <div></div>
+            <div>grand-parent</div>
+            <div>grand-parent</div>
+        </div>
+    </div>
+</div>
+</body>
 </html>

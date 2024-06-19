@@ -1,68 +1,44 @@
-.enfant {
-    position: relative;
+.tree { /*block arbre général*/
+    width: 500px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.node { /*espace entre les blocks de chaque génération*/
+    margin-bottom: 30px;
+}
+
+.enfant { /*block enfant*/
     background-color: #dfdf32;
-    padding: 2rem;
-    text-align: center;
-    max-width: 200px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.enfant::before {
-    content: "";
-
-    position: absolute;
-    z-index: -1;
-    bottom: 15px;
-    right: 5px;
-    width: 50%;
-    top: 80%;
-    max-width: 200px;
-
-    box-shadow: 1px 13px 10px #aaff00;
-    transform: rotate(4deg);
+.parent { /*blocks parents*/
+    display: flex;
+    justify-content: space-between;
 }
 
-.parent {
-    position: relative;
+.parent > div {
     background-color: #12dfc7;
-    padding: 2rem;
-    text-align: center;
-    max-width: 200px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
 }
 
-.parent::before {
-    content: "";
-
-    position: absolute;
-    z-index: -1;
-    bottom: 15px;
-    right: 5px;
-    width: 50%;
-    top: 80%;
-    max-width: 200px;
-
-    box-shadow: 1px 13px 10px #318a7c;
-    transform: rotate(4deg);
+.grand-parent { /*blocks grand-parents*/
+    display: flex;
+    justify-content: space-between;
 }
 
-.grand-parent {
-    position: relative;
+.grand-parent > div {
     background-color: #8f2cff;
-    padding: 2rem;
-    text-align: center;
-    max-width: 200px;
-}
-
-.grand-parent::before {
-    content: "";
-
-    position: absolute;
-    z-index: -1;
-    bottom: 15px;
-    right: 5px;
-    width: 50%;
-    top: 80%;
-    max-width: 200px;
-
-    box-shadow: 1px 13px 10px #9f74d6;
-    transform: rotate(4deg);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
 }

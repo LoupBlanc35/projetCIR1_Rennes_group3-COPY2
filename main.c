@@ -2,9 +2,9 @@
 #include "advanced.h"
 #include "htmlexport.h"
 
-int main() {
+int main() { //test des différentes fonctions
     Population population;
-    population= read_csv("../40.csv");
+    population= read_csv("../40.csv"); //essai avec le fichier "40.csv"
     link_popu(&population);
     /*for (int i=0;i<population.taille;i++)
         printf("%d %s\n",i,population.pers[i].p_mere->prenom);*/

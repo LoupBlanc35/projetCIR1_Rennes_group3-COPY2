@@ -5,7 +5,6 @@
 
 FILE * ouverture_fichier(char* buffer);
 int titreHTMLPerson(char* buffer, Person* p);
-int lecture(char* buffer, const char *format);
 /*
 int fichePath( char* buffer, Person* p);
 void exportPersonToHTML(const Population t, Person* p, char* path);

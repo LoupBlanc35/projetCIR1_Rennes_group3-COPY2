@@ -1,14 +1,11 @@
-#ifndef PARTIE_PROGRAMMATION_HTMLEXPORT_H
-#define PARTIE_PROGRAMMATION_HTMLEXPORT_H
+//
+// Created by jejed on 18/06/2024.
+//
 
-#include "person.h"
-
-FILE * ouverture_fichier(char* buffer);
+#ifndef PROJET_C_HTMLEXPORT_H
+#define PROJET_C_HTMLEXPORT_H
+#include "advanced.h"
 int titreHTMLPerson(char* buffer, Person* p);
-/*
-int fichePath( char* buffer, Person* p);
-void exportPersonToHTML(const Population t, Person* p, char* path);
-int printAncestorsToHTML(char* buffer, const Population t, Person* p);
-*/
-
-#endif //PARTIE_PROGRAMMATION_HTMLEXPORT_H
+int fichePath(char* buffer, Person* p);
+void exportPersonToHTML(Person* p,char* path);
+#endif //PROJET_C_HTMLEXPORT_H

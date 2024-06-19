@@ -8,8 +8,8 @@
 typedef struct population{
     Person* pers;
     int taille;
-    int nb_famille;
 }Population;
+void init_popu(Population* p);
 void insert(Population *p,Person* data);
 void link_popu(Population* p);
 #endif //PROJET_C_POPULATION_H

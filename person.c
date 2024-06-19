@@ -30,19 +30,19 @@ Person* init_pers(char *csvline){
                     strcpy(perso->prenom,chaine);
                     break;
                 case 5:
-                    if(csvline!="0,0,0,-,-,-,-")
+                    if(csvline=="0,0,0,-,-,-,-")
                         perso->jour_naissance=0;
                     else
                         perso->jour_naissance=atoi(chaine);
                     break;
                 case 6:
-                    if(csvline!="0,0,0,-,-,-,-")
+                    if(csvline=="0,0,0,-,-,-,-")
                         perso->mois_naissance=0;
                     else
                         perso->mois_naissance=atoi(chaine);
                     break;
                 case 7:
-                    if(csvline!="0,0,0,-,-,-,-")
+                    if(csvline=="0,0,0,-,-,-,-")
                         perso->annee_naissance=0;
                     else
                         perso->annee_naissance=atoi(chaine);

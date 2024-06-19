@@ -7,5 +7,5 @@
 #include "filemanager.h"
 #include "math.h"
 Person* fratrie(Person pers,Population p);
-Person* ancetre(Person pers,int gene);
+Person* ancetre(Person perso,int gene);
 #endif //PROJET_C_ADVANCED_H

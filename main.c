@@ -1,21 +1,13 @@
 ﻿#include <stdio.h>
-#include "advanced.h"
 #include "htmlexport.h"
-
-int main() { //test des différentes fonctions
-    Population population;
-    population= read_csv("../40.csv"); //essai avec le fichier "40.csv"
-    link_popu(&population);
-    /*for (int i=0;i<population.taille;i++)
-        printf("%d %s\n",i,population.pers[i].p_mere->prenom);*/
-    Person* a = ancetre(population.pers[2],2);
-    Person* er =fratrie(population.pers[1],population);
-    for(int j=0;j<4;j++)
-        printf("%d %s\n",a[j].id,a[j].prenom);
-    //ancetre(population.pers[1],2);
-
-    Person *p1;
-    titreHTMLPerson("40.csv", p1);
-
-    return 0;
+int main() {
+    Population p;
+    p= read_csv("../40.csv");
+    /*for(int i=0;i<p.taille;i++){
+        printf("%d %s\n",p.pers[i].id,p.pers[i].prenom);
+    }*/
+    char nom_fichier[TAILLE];
+    fichePath(nom_fichier,&p.pers[1]);
+    printf("%s",nom_fichier);
+    exportPersonToHTML(&p.pers[1],nom_fichier );
 }

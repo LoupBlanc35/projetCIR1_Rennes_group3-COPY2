@@ -3,10 +3,13 @@
 //
 
 #include "population.h"
+void init_popu(Population* p){
+    p->taille=0;
+}
 void insert(Population *p,Person* data){
+    p->pers= realloc(p->pers,(p->taille+1)*sizeof(Person));
+    p->pers[p->taille]=*data;
     p->taille++;
-    p->pers= realloc(p->pers,p->taille*sizeof(Person));
-    p->pers[p->taille-1]=*data;
 }
 
 void link_popu(Population* p){

@@ -4,6 +4,7 @@
 #include "filemanager.h"
 Population read_csv(const char* filename){
     Population population;
+    init_popu(&population);
     population.pers = malloc(sizeof(Person));
     FILE* f=fopen(filename,"r");
     char perso_info[TAILLE];
